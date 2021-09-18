@@ -20,11 +20,11 @@ Export VBA components from VBA project to ./src/modules, ./src/forms, ./src/clas
 
 VBA modules
 
-### VBA Class Modules [./src/classes/\*.bas](https://github.com/ashtonfei/vba-utils/tree/main/src/classes)
+### VBA Class Modules [./src/classes/\*.cls](https://github.com/ashtonfei/vba-utils/tree/main/src/classes)
 
 VBA Class Modules
 
-1. A JSON like class module, read data from an Excel sheet and store to the JSON like object.
+[clsJson](https://github.com/ashtonfei/vba-utils/tree/main/src/classes/clsJson.cls) A JSON like class module, read data from an Excel sheet and store to the JSON like object.
 
 ```vba
 Public Sub DEMO_JSON()
@@ -38,6 +38,6 @@ Public Sub DEMO_JSON()
 End Sub
 ```
 
-### VBA Form Modules [./src/forms/\*.bas](https://github.com/ashtonfei/vba-utils/tree/main/src/forms)
+### VBA Form Modules [./src/forms/\*.frm](https://github.com/ashtonfei/vba-utils/tree/main/src/forms)
 
 VBA Form Modules
