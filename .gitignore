@@ -1,5 +1,6 @@
 *.tmp
 ~$*
-*.xlsm
+*.xlsx
+*.xlam
 node_modules/
 .DS_Store
