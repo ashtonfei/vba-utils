@@ -8,25 +8,27 @@ Const modHelperName = "modHelper"
 
 ' export modules to this workbook
 Sub exportModules()
+    Call ChDir(ThisWorkbook.path)
     Dim project As VBIDE.VBProject
     Set project = ThisWorkbook.VBProject
     Dim component As VBIDE.VBComponent
     For Each component In project.vbComponents
         If component.Type = vbext_ct_StdModule Then
             If component.name = modHelperName Then
-                Call component.export(srcPath & "/" & component.name & ".bas")
+                Call component.Export(srcPath & "/" & component.name & ".bas")
             Else
-                Call component.export(modulesPath & "/" & component.name & ".bas")
+                Call component.Export(modulesPath & "/" & component.name & ".bas")
             End If
         ElseIf component.Type = vbext_ct_ClassModule Then
-            Call component.export(classesPath & "/" & component.name & ".cls")
+            Call component.Export(classesPath & "/" & component.name & ".cls")
         ElseIf component.Type = vbext_ct_MSForm Then
-            Call component.export(formsPath & "/" & component.name & ".frm")
+            Call component.Export(formsPath & "/" & component.name & ".frm")
         End If
     Next component
 End Sub
 ' import modules from this workbook
 Sub importModules()
+    Call ChDir(ThisWorkbook.path)
     Call removeModules
     Dim modules As Collection
     Set modules = getFilePathes(modulesPath, "*.bas")

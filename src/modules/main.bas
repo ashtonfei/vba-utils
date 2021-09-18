@@ -1,17 +1,14 @@
 Attribute VB_Name = "main"
 Option Explicit
-Const ADDIN_NAME = "Addin Name"
 
-Sub run()
-    Dim app As New AppSmcMerge
-    Dim inputs As Variant
-    inputs = Array("Input1", "Input2")
-    Const OUTPUT = "Report"
-    Call app.run(inputs, OUTPUT)
+Public Sub DEMO_JSON()
+    ' Let's say we have a sheet named "Users" and have headers "ID", "Name", "Age", "Email" at row 1
+    Dim users As New clsJson
+    Call users.init(sheetName:="Users", keyColumnName:="ID", headerRowIndex:=1)
+    ' get user data
+    Debug.Print "Name:" & Space(4) & users.getValue(key:="1", columnName:="Name")
+    Debug.Print "Email:" & Space(4) & users.getValue("1", "Email")
+    Debug.Print "Age:" & Space(4) & users.data("1")("Age")
 End Sub
 
-Sub show_version()
-    Dim version As New clsVersion
-    Call version.show(ADDIN_NAME)
-End Sub
 
