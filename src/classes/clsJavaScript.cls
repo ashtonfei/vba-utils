@@ -15,7 +15,7 @@ Public Function getArrayLength(ByVal items As Variant) As Long
     With script
         .Language = "JScript"
         .AddCode func
-        getArrayLength = .Run("func", items)
+        getArrayLength = .run("func", items)
     End With
 End Function
 

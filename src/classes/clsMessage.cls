@@ -23,6 +23,3 @@ Public Sub init(ByVal appName As String)
     version = appName & " [VERSION]"
 End Sub
 
-Public Sub success()
-  
-end Sub

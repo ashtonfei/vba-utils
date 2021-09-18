@@ -37,7 +37,7 @@ Function workbookHasSheet(ByRef Workbook As Workbook, ByVal sheetName As String)
     Dim ws As Worksheet
     On Error Resume Next
     Set ws = Workbook.Sheets(sheetName)
-    workbookHasSheet = (Err.Number = 0)
+    workbookHasSheet = (Err.number = 0)
     Err.Clear
 End Function
 
@@ -110,7 +110,7 @@ Function collectionHasKey(ByRef coll As Collection, ByVal key As String) As Bool
     Dim item As Variant
     On Error Resume Next
     item = IsObject(coll(key))
-    collectionHasKey = (Err.Number = 0)
+    collectionHasKey = (Err.number = 0)
     Err.Clear
 End Function
 
