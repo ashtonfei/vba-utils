@@ -2,19 +2,19 @@
 
 A repo for my daily use VBA utilities
 
-### [./src/modHelper.bas]()
+### [./src/modHelper.bas](https://github.com/ashtonfei/vba-utils/blob/main/src/modHelper.bas)
 
-- `vb Sub importModules ` Import VBA components from ./src/modules, ./src/forms, ./src/classes into VBA Project.
-- `vb Sub exportModules ` Export VBA components from VBA project to ./src/modules, ./src/forms, ./src/classes.
+`importModules` Import VBA components from ./src/modules, ./src/forms, ./src/classes into VBA Project.
+`exportModules` Export VBA components from VBA project to ./src/modules, ./src/forms, ./src/classes.
 
-### [./src/modules/\*.bas]()
+### [./src/modules/\*.bas](https://github.com/ashtonfei/vba-utils/tree/main/src/modules)
 
 VBA modules
 
-### [./src/classes/\*.bas]()
+### [./src/classes/\*.bas](https://github.com/ashtonfei/vba-utils/tree/main/src/classes)
 
 VBA Class Modules
 
-### [./src/forms/\*.bas]()
+### [./src/forms/\*.bas](https://github.com/ashtonfei/vba-utils/tree/main/src/forms)
 
 VBA Form Modules
